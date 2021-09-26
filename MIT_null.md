@@ -148,3 +148,37 @@ e.g `#!/usr/bin/env python`
 `autojump` or `z`
 
 More complex tools exist to quickly get an overview of a directory structure: `tree`, `broot` or even full fledged file managers like `nnn` or `ranger`
+
+### day 3 Editors(Vim)
+
+#### Philosophy of Vim
+
+When programming, you spend most of your time reading/editing, not writing. For this reason, Vim is a modal editor: it has different modes for inserting text vs manipulating text. Vim is programmable (with Vimscript and also other languages like Python), and Vim’s interface itself is a programming language: keystrokes (with mnemonic names) are commands, and these commands are composable. Vim avoids the use of the mouse, because it’s too slow; Vim even avoids using the arrow keys because it requires too much movement.
+
+#### Modal editing
+
+`Normal`: for moving around a file and making edits
+`Insert`: for inserting text
+`Replace`: for replacing text
+`Visual (plain, line, or block)`: for selecting blocks of text
+`Command-line`: for running a command
+
+#### Vim’s interface is a programming language
+
+The most important idea in Vim is that Vim’s interface itself is a programming language. Keystrokes (with mnemonic names) are commands, and these commands compose. This enables efficient movement and edits, especially once the commands become muscle memory.
+
+##### Movement
+
+Basic movement: hjkl (left, down, up, right)
+Words: w (next word), b (beginning of word), e (end of word)
+Lines: 0 (beginning of line), ^ (first non-blank character), $ (end of line)
+Screen: H (top of screen), M (middle of screen), L (bottom of screen)
+Scroll: Ctrl-u (up), Ctrl-d (down)
+File: gg (beginning of file), G (end of file)
+Line numbers: :{number}<CR> or {number}G (line {number})
+Misc: % (corresponding item)
+Find: f{character}, t{character}, F{character}, T{character}
+find/to forward/backward {character} on the current line
+, / ; for navigating matches
+Search: /{regex}, n / N for navigating matches
+
