@@ -20,7 +20,11 @@ use `\`  to print special characters  e.g echo My\ Photos = echo "My Photos"
 
 `tee` takes its input and writes it to a file but also to standard out
 
+e.g echo 500 | sudo tee backlight
+
 `xdg-open` : on Linux open file
+
+`open`: on macos open file
 
 ### day 2 Shell Tools and Scripting
 
