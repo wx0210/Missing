@@ -25,6 +25,6 @@ done
 #4.
 find  . -name "*.html" | xargs -d '\n' tar -cvzf html.zip
 #5.
-find -type f | xargs -d "\n" ls -lt | head -1
+find . -type f -printf '%T@ %p\n' | sort -n | tail -1 | cut -f2- -d" "
 ```
 
